@@ -523,8 +523,8 @@
     <!-- Client-side Js -->
     <script>
       var stripe = Stripe(
-        "pk_test_51L5AsSSCC8JVWfvgEtfJkzHMTh7Z5PLY5m1yhR379sJgwAVZEe13NaiG33wsHSyHnPJMjTNOosiPk6AeMI8q0ims0049IKffiu"
-      );
+       "pk_test_51R4nWTDeSMg8FIB36FRFnTl4CMiUhWDmxct2BIJgX0ta3nv33xT5MtacBkThneITAHrgbhjr4rvyvC9K2ciLLw7M003Ok8DzhT" 
+  );
       var button = document.getElementById("checkout-btn");
 
       button.addEventListener("click", function (e) {
@@ -538,7 +538,7 @@
         }
         
         // Setting this PriceId here:
-        var priceId = "price_1M0KsTSCC8JVWfvgLwfKxX53";
+        var priceId = "prod_RzrxM3iHObBUWq";
 
         fetch("/create-checkout-session/" + priceId, {
           method: "POST",
